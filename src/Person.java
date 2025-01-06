@@ -1,4 +1,4 @@
-public class Person implements Payable{
+public class Person implements Payable, Comparable<Person> {
     private static int counter = 1;
     private int id;
     private String name;
@@ -44,5 +44,10 @@ public class Person implements Payable{
 
     public String getPosition() {
         return "";
+    }
+
+    @Override
+    public int compareTo(Person other) {
+        return Double.compare(this.getPaymentAmount(), other.getPaymentAmount());
     }
 }
