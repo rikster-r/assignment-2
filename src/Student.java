@@ -1,21 +1,21 @@
 public class Student extends Person {
-    private int gpa;
+    private double gpa;
     private static final double STIPEND_AMOUNT = 36660.00;
 
     public Student() {
         super();
     }
 
-    public Student(String name, String surname, int gpa) {
+    public Student(String name, String surname, double gpa) {
         super(name, surname);
         this.gpa = gpa;
     }
 
-    public int getGpa() {
+    public double getGpa() {
         return gpa;
     }
 
-    public void setGpa(int gpa) {
+    public void setGpa(double gpa) {
         this.gpa = gpa;
     }
 
